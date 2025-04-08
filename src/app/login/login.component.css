@@ -1,0 +1,14 @@
+/* login.component.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 90vh;
+}
+.login-card {
+  inline-size: 300px;
+}
+.full-width {
+  inline-size: 100%;
+  margin-block-start: 10px;
+}

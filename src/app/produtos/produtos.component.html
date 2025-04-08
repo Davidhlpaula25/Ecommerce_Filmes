@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+  <span>Catálogo de Filmes</span>
+  <button mat-button routerLink="/carrinho">
+    <mat-icon>shopping_cart</mat-icon> Carrinho
+  </button>
+</mat-toolbar>
+
+<div class="produtos-container">
+  <mat-card *ngFor="let filme of filmes()" class="produto-card">
+    <mat-card-header>
+      <mat-card-title>{{ filme.title }}</mat-card-title>
+    </mat-card-header>
+
+    <img
+    mat-card-image
+    [src]="'https://image.tmdb.org/t/p/w300' + filme.poster_path"
+    alt="{{ filme.title }}"  width="700" height="600"
+    class="poster"
+  />
+
+    <mat-card-content>
+      <p class="descricao">{{ filme.overview }}</p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="adicionarAoCarrinho(filme)">
+        <mat-icon>add_shopping_cart</mat-icon> Adicionar
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

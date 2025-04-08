@@ -1,0 +1,10 @@
+.full-width {
+  inline-size: 100%;
+  margin-block-end: 1rem;
+}
+
+mat-card {
+  max-inline-size: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
