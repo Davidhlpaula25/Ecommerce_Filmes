@@ -1,6 +1,16 @@
+<div class="login-container">
+  <mat-toolbar color="primary">
+    <span style="flex: 1;">🎬 TecnoVibeFilmes</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/login">
+      <mat-icon>arrow_back</mat-icon> Voltar
+    </button>
+  </mat-toolbar>
 <mat-card>
   <form [formGroup]="form" (ngSubmit)="cadastrar()">
+    <h2>Cadastro</h2>
     <mat-form-field appearance="outline" class="full-width">
+
       <mat-label>Email</mat-label>
       <input matInput type="email" formControlName="email" required />
     </mat-form-field>
@@ -20,4 +30,5 @@
     </button>
   </form>
 </mat-card>
+</div>
 

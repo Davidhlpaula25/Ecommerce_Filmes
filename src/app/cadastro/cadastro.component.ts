@@ -4,9 +4,11 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { Router } from '@angular/router';
-import { LocalStorageService } from '../local-storage.service'; // ajuste o caminho conforme seu projeto
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { Router, RouterModule } from '@angular/router';
+import { LocalStorageService } from '../local-storage.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -17,9 +19,13 @@ import { LocalStorageService } from '../local-storage.service'; // ajuste o cami
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    RouterModule
   ],
-  templateUrl: './cadastro.component.html'
+  templateUrl: './cadastro.component.html',
+  styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent {
   form: FormGroup;
@@ -48,7 +54,9 @@ export class CadastroComponent {
 
     const novoUsuario = { email, senha };
     this.localStorageService.setItem('usuario', JSON.stringify(novoUsuario));
+
     alert('Cadastro realizado com sucesso!');
     this.router.navigate(['/login']);
+
   }
 }

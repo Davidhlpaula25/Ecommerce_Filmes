@@ -9,7 +9,9 @@ import { RouterModule } from '@angular/router';
   selector: 'app-produtos',
   standalone: true,
   imports: [CommonModule, HttpClientModule, MatCardModule,MatIconModule, MatToolbarModule, RouterModule],
-  templateUrl: './produtos.component.html'
+  templateUrl: './produtos.component.html',
+  styleUrls: ['./produtos.component.css']
+
 })
 export class ProdutosComponent {
   http = inject(HttpClient);

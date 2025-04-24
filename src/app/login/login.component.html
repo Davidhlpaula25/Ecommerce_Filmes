@@ -1,21 +1,28 @@
-<!-- login.component.html -->
 <div class="login-container">
+  <mat-toolbar color="primary">
+    <span style="flex: 1;">🎬 TecnoVibeFilmes</span>
+    <span class="spacer"></span>
+  </mat-toolbar>
   <mat-card class="login-card">
     <h2>Login</h2>
     <form [formGroup]="form" (ngSubmit)="login()">
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Email</mat-label>
-        <input matInput formControlName="email" type="email">
+        <input matInput formControlName="email" type="email" required>
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Senha</mat-label>
-        <input matInput formControlName="senha" type="password">
+        <input matInput formControlName="senha" type="password" required>
       </mat-form-field>
 
-      <button mat-raised-button color="primary" class="full-width" type="submit">
-        Entrar
-      </button>
+      <button mat-raised-button color="primary" (click)="login()">Entrar</button>
+
+
+      <p class="cadastro-link">
+        Não tem uma conta?
+        <a (click)="irParaCadastro()" style="cursor: pointer;">Cadastre-se</a>
+      </p>
     </form>
   </mat-card>
 </div>

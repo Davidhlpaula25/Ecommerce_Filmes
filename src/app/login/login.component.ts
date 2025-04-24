@@ -4,7 +4,9 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { Router } from '@angular/router';
 import { LocalStorageService } from '../local-storage.service';
 
@@ -17,7 +19,10 @@ import { LocalStorageService } from '../local-storage.service';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule
+
   ],
   templateUrl: './login.component.html'
 })
@@ -39,7 +44,7 @@ export class LoginComponent implements OnInit {
     const jaExiste = this.localStorageService.getItem('usuario');
     if (!jaExiste) {
       const usuarioTeste = {
-        email: 'testecom@teste.',
+        email: 'teste@teste.com',
         senha: '1234'
       };
       this.localStorageService.setItem('usuario', JSON.stringify(usuarioTeste));

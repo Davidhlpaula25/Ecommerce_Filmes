@@ -1,6 +1,6 @@
 
 <mat-toolbar color="primary">
-  <span>Carrinho</span>
+  <span style="flex: 1;">🎬 TecnoVibeFilmes</span>
   <span class="spacer"></span>
   <button mat-button routerLink="/produtos">
     <mat-icon>arrow_back</mat-icon> Voltar
@@ -12,6 +12,10 @@
     <mat-card-title>{{ filme.title }}</mat-card-title>
     <img mat-card-image [src]="'https://image.tmdb.org/t/p/w300' + filme.poster_path"  width="800" height="400">
     <mat-card-actions>
+      <mat-card-content>
+        <p class="descricao">{{ filme.overview }}</p>
+      </mat-card-content>
+
       <button mat-icon-button color="warn" (click)="removerDoCarrinho(i)">
         <mat-icon>delete</mat-icon>
       </button>

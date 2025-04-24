@@ -1,4 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Fonte e reset */
+body {
+  margin: 0;
+  background-color: #4b4848;
+  font-family: Roboto, sans-serif;
+}
+
+/* ===== Header fixo ===== */
+mat-toolbar, .custom-toolbar {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  background-color: #7b95eb !important; /* cinza escuro */
+  color: rgb(10, 10, 10) !important;
+  z-index: 1000;
+}
+
+/* Espaço para o conteúdo abaixo do header */
+.produtos-container,
+.carrinho-container {
+  padding-block-start: 10rem;
+  padding-inline: 20px;
+  background-color: #18206b;
+  min-block-size: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Estilo dos cards */
+.produto-card {
+  inline-size: 280px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imagem nos cards */
+mat-card img,.poster {
+  inline-size: 100%;
+  block-size: auto;
+  border-block-end: 1px solid #dddddd;
+}
+
+/* Texto da descrição */
+.descricao {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Espaço entre os elementos no header */
+.spacer {
+  flex: 1 1 auto;
+}
+/* Fundo bonito */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 100vh;
+  background: linear-gradient(to right, #4b6cb7, #182848);
+}
+
+/* Card centralizado */
+.login-card {
+  inline-size: 100%;
+  max-inline-size: 400px;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-block-end: 24px;
+}
+
+/* Campos de formulário */
+.full-width {
+  inline-size: 100%;
+  margin-block-end: 20px;
+}
+
+/* Link para cadastro */
+.cadastro-link {
+  margin-block-start: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.cadastro-link a {
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.cadastro-link a:hover {
+  text-decoration: underline;
+}
