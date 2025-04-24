@@ -21,14 +21,19 @@
     class="poster"
   />
 
-    <mat-card-content>
-      <p class="descricao">{{ filme.overview }}</p>
-    </mat-card-content>
+  <mat-card-content>
+    <p class="descricao">
+      {{ isExpandido(filme.id) ? filme.overview : (filme.overview | slice:0:100) + '...' }}
+    </p>
+    <button mat-button (click)="toggleDescricao(filme.id)">
+      {{ isExpandido(filme.id) ? 'Ver menos' : 'Ver mais' }}
+    </button>
+  </mat-card-content>
 
-    <mat-card-actions>
-      <button mat-raised-button color="primary" (click)="adicionarAoCarrinho(filme)">
-        <mat-icon>add_shopping_cart</mat-icon> Adicionar
-      </button>
-    </mat-card-actions>
-  </mat-card>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="adicionarAoCarrinho(filme)">
+      <mat-icon>add_shopping_cart</mat-icon> Adicionar
+    </button>
+  </mat-card-actions>
+</mat-card>
 </div>

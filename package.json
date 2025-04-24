@@ -26,6 +26,8 @@
     "a": "^3.0.1",
     "express": "^4.18.2",
     "filmes-ecommerce": "file:",
+    "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
     "package": "^1.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

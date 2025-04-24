@@ -1,4 +1,3 @@
-
 <mat-toolbar color="primary">
   <span style="flex: 1;">🎬 TecnoVibeFilmes</span>
   <span class="spacer"></span>
@@ -7,18 +6,42 @@
   </button>
 </mat-toolbar>
 
-<div class="carrinho-container">
-  <mat-card *ngFor="let filme of filmes; let i = index" class="produto-card">
-    <mat-card-title>{{ filme.title }}</mat-card-title>
-    <img mat-card-image [src]="'https://image.tmdb.org/t/p/w300' + filme.poster_path"  width="800" height="400">
-    <mat-card-actions>
+<div *ngIf="totalItens === 0" class="carrinho-vazio">
+  <h2>🛒 Seu carrinho está vazio!</h2>
+  <button mat-raised-button color="primary" routerLink="/produtos">Ir para filmes</button>
+</div>
+
+<div *ngIf="totalItens > 0">
+  <div class="resumo-carrinho">
+    <p><strong>Itens no carrinho:</strong> {{ totalItens }}</p>
+    <p><strong>Preço unitário:</strong> R$ {{ precoUnitario.toFixed(2) }}</p>
+    <p><strong>Total:</strong> R$ {{ totalPreco.toFixed(2) }}</p>
+
+    <div class="botoes-resumo">
+      <button mat-raised-button color="warn" (click)="esvaziarCarrinho()">Esvaziar carrinho</button>
+      <button mat-raised-button color="accent" (click)="finalizarCompra()">Finalizar compra</button>
+    </div>
+  </div>
+
+  <div class="carrinho-container">
+    <mat-card *ngFor="let filme of filmes; let i = index" class="produto-card">
+      <mat-card-title>{{ filme.title }}</mat-card-title>
+      <img mat-card-image [src]="'https://image.tmdb.org/t/p/w300' + filme.poster_path" width="800" height="400" />
+
       <mat-card-content>
-        <p class="descricao">{{ filme.overview }}</p>
+        <p class="descricao">
+          {{ isExpandido(filme.id) ? filme.overview : (filme.overview | slice:0:100) + '...' }}
+        </p>
+        <button mat-button (click)="toggleDescricao(filme.id)">
+          {{ isExpandido(filme.id) ? 'Ver menos' : 'Ver mais' }}
+        </button>
       </mat-card-content>
 
-      <button mat-icon-button color="warn" (click)="removerDoCarrinho(i)">
-        <mat-icon>delete</mat-icon>
-      </button>
-    </mat-card-actions>
-  </mat-card>
+      <mat-card-actions>
+        <button mat-icon-button color="warn" (click)="removerDoCarrinho(i)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 </div>

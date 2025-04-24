@@ -16,6 +16,7 @@ import { RouterModule } from '@angular/router';
 export class ProdutosComponent {
   http = inject(HttpClient);
   filmes = signal<any[]>([]);
+  mostrarTudo: { [id: number]: boolean } = {};
 
   constructor() {
     this.http.get<any>('https://api.themoviedb.org/3/movie/popular?api_key=46e081c1fadc5152d5f276b471abd1b5&language=pt-BR')
@@ -27,5 +28,13 @@ export class ProdutosComponent {
     carrinhoAtual.push(filme);
     localStorage.setItem('carrinho', JSON.stringify(carrinhoAtual));
     alert('Filme adicionado ao carrinho!');
+  }
+
+  toggleDescricao(id: number) {
+    this.mostrarTudo[id] = !this.mostrarTudo[id];
+  }
+
+  isExpandido(id: number): boolean {
+    return this.mostrarTudo[id];
   }
 }
