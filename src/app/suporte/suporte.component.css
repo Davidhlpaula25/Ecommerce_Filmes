@@ -1,0 +1,22 @@
+.suporte-botao {
+  position: fixed;
+  inset-block-end: 20px;
+  inset-inline-end: 20px;
+  z-index: 1000;
+}
+
+.suporte-janela {
+  position: fixed;
+  inset-block-end: 90px;
+  inset-inline-end: 20px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  inline-size: 250px;
+}
+
+.suporte-janela p {
+  margin: 6px 0;
+}

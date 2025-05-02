@@ -1,0 +1,16 @@
+<!-- Botão flutuante -->
+<button mat-fab color="primary" class="suporte-botao" (click)="toggleSuporte()">
+  <mat-icon>support_agent</mat-icon>
+</button>
+
+<!-- Janela de suporte -->
+<div class="suporte-janela" *ngIf="mostrarSuporte">
+  <h3>📞 Suporte</h3>
+  <p><mat-icon>phone</mat-icon> Telefone: (62) 99999-0000</p>
+  <p><mat-icon><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYhJREFUSEvN1T9IVmEUBvCf2dLQ0CBECkHRIgqtCqVFIf1BQXG1pUklRGgQHBXBpSFqa6ucGougIB1KB5GgtTWMSnQuze4rR/n49NJ3v5vSXS6X+57nOc95zjlvg0N+Gg4Z35ETLOBySVXzuLKLUa1guyT4Ptz/guAXnuAFPrHjWwf6cCdH8V7if1PwDbdwCjM4h+P4nL2n8B1zaK4iqolgMwy/iMc5mU7iDZZCWSEPnuMhPmACpzF2ANFN3MZwxb+aFPTgLgZxIsr0pSrThPkO03hblKAlgi+gF6lkrw5Q8APpzHo9BO9xNpOfzG4PQ69GN7WiEWs4n5VvoyjBNdyL7FPsctS6DWlaE2hq2zT9s2F2IZOf4hEWKzL7inGsZuADGMWN8Cp9FyJ4GV30OqdFf+N+pnAlvKo8VlMXjURZjoXBKfO0xH5GOR5kCpsyg5/hTD2D1hWBl3ASaS4+Ygud6MdQ2VVR73KtqUT1gqe4XII0ld1lkGOir+ddOCWx94cf+Z38zxX8AdXuTxk7YcaFAAAAAElFTkSuQmCC"/>
+    whatsapp</mat-icon> WhatsApp: <a href="https://wa.me/5562999990000" target="_blank">(62) 99999-0000</a></p>
+  <p><mat-icon>email</mat-icon>E-mail:<a href="mailto:suporte&#64;CineShop.com">suporte&#64;CineShop.com</a></p>
+  <p><mat-icon><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeNJREFUSEvF1T+ozmEUB/DPdUlSN5KUwcLtJv/jjpiMZHCVYjESxSCDlAwGJYrproRBYpJFuotYkKRkUCYWhZL/z9Hze3s8fr/cN73dM73vOec533O+589vyIBlaMDxzRjAchzFZqymM5GfeIYpnMfLmpG2Cg5k5zl90vcVBzFZvqsBNuIhZvUZvHH/hk140ihqgJvY2Ufwt1iDCVzM724k2nZ1AbzGshaANziD51iEMRxH+AdAZP0ov3uFFV0AHzG/AribM/qAxdn2DqtwB59SzxZgSbaF30gbQPD+vQoegUZzsL3Yipic+ynLyxjOE1Q+iz70BqTsQSi/VABncSxlfgkxXaUE54dwG9sLQyQ5u62CUMaolbIft3LGsQ+lPMU6nEx7cqow/MiV/VaVFcTvMJYSc30tUXMPayvb4wS+ASdSwNOVrRe3HtPgt5TgeR8u4HBli809kivcUdg6exA+NUBUtB7zsAdbcqBo8tU0unNbmvw5+/9FUSjaxjRmPZYvKCkl7lTQt7TSv08VL2x0NUVxrHpLUjUuNrRctG1V4ObvC6zsArieguzueDhd9RXEzrRSNI4H/3ns4mDGCLcChHKg57oBLj84ccy6pPzgnEsjHYfuD5mxT+Z0G/pPv4FX8AszSlgZRYBdrAAAAABJRU5ErkJggg=="/>
+    instagram</mat-icon> Instagram: <a href="https://instagram.com/CineShop" target="_blank">&#64;CineShop</a></p>
+</div>
+

@@ -1,0 +1,14 @@
+
+.button {
+  background-color: white;
+  color: rgb(252, 249, 249); /* Ajuste a cor do texto para contraste */
+  border: 1px solid rgb(247, 238, 238); /* Opcional: borda para destacar o botão */
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+}

@@ -1,0 +1,23 @@
+<mat-toolbar color="primary" class="custom-toolbar">
+  <span style="flex: 1;"><img src="assets/simbolologo.png" alt="simbolologo" class="logo" ><img src="assets/logo.png" alt="Background" class="logo"></span>
+  <button mat-button routerLink="/produtos">
+    <span class="material-icons">
+      live_tv
+      </span>Filmes</button>
+  <button mat-button routerLink="/carrinho">
+    <mat-icon>shopping_cart</mat-icon> Carrinho
+  </button>
+  <button mat-button routerLink="/login">
+    <span class="material-icons">
+      logout
+      </span>Sair</button>
+
+</mat-toolbar>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2025 CINESHOP. Todos os direitos reservados.</p>
+</footer>

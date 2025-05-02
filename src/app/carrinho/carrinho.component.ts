@@ -42,7 +42,7 @@ export class CarrinhoComponent {
   }
 
   gerarRecibo(): string {
-    let recibo = '🎬 RECIBO DE COMPRA - TecnoVibeFilmes\n\n';
+    let recibo = '🎬 RECIBO DE COMPRA - CINESHOP\n\n';
     recibo += `Data: ${new Date().toLocaleString()}\n`;
     recibo += `Itens comprados: ${this.totalItens}\n`;
     recibo += `Preço unitário: R$ ${this.precoUnitario.toFixed(2)}\n\n`;

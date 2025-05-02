@@ -1,14 +1,7 @@
 
-<mat-toolbar color="primary">
-  <span style="flex: 1;">🎬 TecnoVibeFilmes</span>
-
-  <span class="spacer"></span>
-  <button mat-button routerLink="/carrinho">
-    <mat-icon>shopping_cart</mat-icon> Carrinho
-  </button>
-</mat-toolbar>
 
 <div class="produtos-container">
+  <h1>Aqui o cinema é seu. Navegue pelos lançamentos, clássicos e muito mais. Escolha, compre e curta quando quiser.</h1>
   <mat-card *ngFor="let filme of filmes()" class="produto-card">
     <mat-card-header>
       <mat-card-title>{{ filme.title }}</mat-card-title>

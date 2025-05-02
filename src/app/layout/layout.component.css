@@ -1,0 +1,35 @@
+/* Cabeçalho */
+.custom-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #182848 !important;
+  color: white !important;
+}
+
+.logo {
+  inline-size: 150px;
+  margin-block-end: 30px;
+  margin-block-start: 30px;
+  block-size: 110px;
+  inline-size: 120px;
+
+}
+
+/* Conteúdo principal */
+.content {
+  padding: 80px 20px; /* Espaço abaixo do cabeçalho */
+  min-block-size: calc(100vh - 120px); /* Altura mínima para incluir o rodapé */
+  background-color: #f4f4f4;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #182848;
+  color: white;
+  position: relative;
+  inset-block-end: 0;
+  inline-size: 100%;
+}

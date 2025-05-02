@@ -1,0 +1,95 @@
+.home-container {
+  position: relative;
+
+  min-block-size: 100vh;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.overlay {
+  background:  #4b6cb7;
+  padding: 100px 20px 50px;
+  text-align: center;
+}
+
+.logo {
+  inline-size: 150px;
+  margin-block-end: 30px;
+  margin-block-start: 30px;
+  block-size: 110px;
+  inline-size: 120px;
+
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-block-end: 1px;
+}
+
+h2{
+  font-size: 1.8rem;
+  margin-block-end: 20px;
+}
+p{
+  font-size: 1.2rem;
+  margin-block-end: 20px;
+}
+
+.email-box {
+  display: flex;
+  justify-content: center;
+  max-inline-size: 500px;
+  margin: auto;
+  gap: 10px;
+}
+
+.email-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.email-box button {
+  background-color: red;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.trending {
+  background-color:  #4b6cb7;
+  padding: 40px 20px;
+}
+
+.trending h3 {
+  font-size: 1.8rem;
+  margin-block-end: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background-color: #222;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  inline-size: 100%;
+  block-size: 200px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px;
+}

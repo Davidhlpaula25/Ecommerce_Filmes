@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-produtos',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, MatCardModule,MatIconModule, MatToolbarModule, RouterModule],
+  imports: [CommonModule, HttpClientModule, MatCardModule, MatIconModule, MatToolbarModule, RouterModule],
   templateUrl: './produtos.component.html',
   styleUrls: ['./produtos.component.css']
 
@@ -17,6 +17,7 @@ export class ProdutosComponent {
   http = inject(HttpClient);
   filmes = signal<any[]>([]);
   mostrarTudo: { [id: number]: boolean } = {};
+  router: any;
 
   constructor() {
     this.http.get<any>('https://api.themoviedb.org/3/movie/popular?api_key=46e081c1fadc5152d5f276b471abd1b5&language=pt-BR')
@@ -36,5 +37,9 @@ export class ProdutosComponent {
 
   isExpandido(id: number): boolean {
     return this.mostrarTudo[id];
+  }
+  sair() {
+    localStorage.clear(); // limpa dados do usuário, se necessário
+    this.router.navigate(['/login']); // redireciona para tela de login
   }
 }

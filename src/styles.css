@@ -5,6 +5,15 @@ body {
   background-color: #4b4848;
   font-family: Roboto, sans-serif;
 }
+.logo {
+  inline-size: 150px;
+  margin-block-end: 30px;
+  margin-block-start: 30px;
+  block-size: 110px;
+  inline-size: 120px;
+
+}
+
 
 /* ===== Header fixo ===== */
 mat-toolbar, .custom-toolbar {
@@ -12,7 +21,7 @@ mat-toolbar, .custom-toolbar {
   inset-block-start: 0;
   inset-inline-start: 0;
   inline-size: 100%;
-  background-color: #7b95eb !important; /* cinza escuro */
+  background-color: #11235e !important; /* cinza escuro */
   color: rgb(10, 10, 10) !important;
   z-index: 1000;
 }
@@ -58,12 +67,25 @@ mat-card img,.poster {
   flex: 1 1 auto;
 }
 /* Fundo bonito */
-.login-container {
+.login-container{
   display: flex;
   justify-content: center;
   align-items: center;
   block-size: 100vh;
   background: linear-gradient(to right, #4b6cb7, #182848);
+}
+.button {
+  background-color: white;
+  color: rgb(252, 249, 249); /* Ajuste a cor do texto para contraste */
+  border: 1px solid rgb(247, 238, 238); /* Opcional: borda para destacar o botão */
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
 }
 
 /* Card centralizado */

@@ -1,0 +1,13 @@
+h1 {
+  align-items: center;
+  display: flexbox;
+  font-size: 2rem;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  inline-size: 100%;
+  color: white;
+
+}

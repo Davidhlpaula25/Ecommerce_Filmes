@@ -7,7 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { LocalStorageService } from '../local-storage.service';
 
 @Component({
@@ -21,7 +21,8 @@ import { LocalStorageService } from '../local-storage.service';
     MatInputModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    RouterModule
 
   ],
   templateUrl: './login.component.html'

@@ -5,6 +5,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterModule } from '@angular/router';
+import { LayoutComponent } from "./layout/layout.component";
+import { SuporteComponent } from "./suporte/suporte.component";
 
 
 
@@ -18,7 +20,8 @@ import { RouterModule } from '@angular/router';
     MatIconModule,
     MatTooltipModule,
     MatButtonModule,
-
+    LayoutComponent,
+    SuporteComponent
 ],
   templateUrl: './app.component.html'
 })
