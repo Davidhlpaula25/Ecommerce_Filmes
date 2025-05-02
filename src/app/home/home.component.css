@@ -8,7 +8,7 @@
 
 .overlay {
   background:  #4b6cb7;
-  padding: 100px 20px 50px;
+  padding: 10px 20px 50px;
   text-align: center;
 }
 
@@ -63,7 +63,7 @@ p{
 
 .trending {
   background-color:  #4b6cb7;
-  padding: 40px 20px;
+  padding: 40px 50px;
 }
 
 .trending h3 {
@@ -72,9 +72,9 @@ p{
 }
 
 .cards {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 15px;
+  gap: 10px;
 }
 
 .card {
@@ -86,7 +86,7 @@ p{
 
 .card img {
   inline-size: 100%;
-  block-size: 200px;
+  block-size: 40rem;
   object-fit: cover;
 }
 

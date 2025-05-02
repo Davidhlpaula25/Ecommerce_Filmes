@@ -12,8 +12,8 @@ import { RouterModule } from '@angular/router';
 })
 export class HomeComponent {
   trendingMovies = [
-    { title: 'Filme 1', image: 'assets/images/movie1.jpg' },
-    { title: 'Filme 2', image: 'assets/images/movie2.jpg' },
-    { title: 'Filme 3', image: 'assets/images/movie3.jpg' }
+    { title: 'Caos e Destruição', image: 'assets/filme1.png' },
+    { title: 'Resgate implacável', image: 'assets/filme2.png' },
+    { title: 'Ladrão de joias', image: 'assets/filme3.png' }
   ];
 }
