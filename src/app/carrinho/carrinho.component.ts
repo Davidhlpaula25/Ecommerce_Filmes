@@ -24,6 +24,7 @@ export class CarrinhoComponent {
   filmes = JSON.parse(localStorage.getItem('carrinho') || '[]');
   mostrarTudo: { [id: number]: boolean } = {};
   precoUnitario = 14.9;
+  router: any;
 
   removerDoCarrinho(index: number) {
     this.filmes.splice(index, 1);
@@ -36,26 +37,10 @@ export class CarrinhoComponent {
   }
 
   finalizarCompra() {
-    const recibo = this.gerarRecibo();
-    alert(recibo);
-    this.esvaziarCarrinho();
+    this.router.navigate(['/cartao']);
   }
 
-  gerarRecibo(): string {
-    let recibo = '🎬 RECIBO DE COMPRA - CINESHOP\n\n';
-    recibo += `Data: ${new Date().toLocaleString()}\n`;
-    recibo += `Itens comprados: ${this.totalItens}\n`;
-    recibo += `Preço unitário: R$ ${this.precoUnitario.toFixed(2)}\n\n`;
 
-    this.filmes.forEach((filme: any, index: number) => {
-      recibo += `${index + 1}. ${filme.title}\n`;
-    });
-
-    recibo += `\nTOTAL: R$ ${this.totalPreco.toFixed(2)}\n`;
-    recibo += 'Obrigado pela sua compra! 🎉\n';
-
-    return recibo;
-  }
 
   toggleDescricao(id: number) {
     this.mostrarTudo[id] = !this.mostrarTudo[id];

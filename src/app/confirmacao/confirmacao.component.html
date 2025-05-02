@@ -1,0 +1,12 @@
+<div class="recibo-container">
+  <h2>Compra Confirmada!</h2>
+  <p>Data: {{ dataAtual | date: 'short' }}</p>
+  <h3>Filmes comprados:</h3>
+  <ul>
+    <li *ngFor="let filme of filmesComprados">
+      {{ filme.title }} - R$ 14,90
+    </li>
+  </ul>
+  <h4>Total: R$ {{ filmesComprados.length * 14.9 }}</h4>
+  <button mat-raised-button color="primary" (click)="voltarParaProdutos()">Voltar para loja</button>
+</div>

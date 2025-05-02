@@ -1,0 +1,25 @@
+<h2>Cadastro de Cartão</h2>
+
+<form (ngSubmit)="cadastrarCartao()">
+  <mat-form-field appearance="fill" class="campo">
+    <mat-label>Nome no Cartão</mat-label>
+    <input matInput [(ngModel)]="nome" name="nome" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="campo">
+    <mat-label>Número do Cartão</mat-label>
+    <input matInput [(ngModel)]="numero" name="numero" required maxlength="19" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="campo">
+    <mat-label>Validade (MM/AA)</mat-label>
+    <input matInput [(ngModel)]="validade" name="validade" required maxlength="5" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="campo">
+    <mat-label>CVV</mat-label>
+    <input matInput [(ngModel)]="cvv" name="cvv" required maxlength="3" type="password" />
+  </mat-form-field>
+
+  <button mat-raised-button routerLink="/confirmacao" color="primary" type="submit">Cadastrar Cartão</button>
+</form>

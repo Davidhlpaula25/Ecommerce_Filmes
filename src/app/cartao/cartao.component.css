@@ -1,0 +1,16 @@
+h2 {
+  text-align: center;
+  margin-block-end: 20px;
+}
+
+form {
+  max-inline-size: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campo {
+  inline-size: 100%;
+}
