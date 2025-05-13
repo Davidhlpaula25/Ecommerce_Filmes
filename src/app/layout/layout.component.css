@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #182848 !important;
+  background-color:rgb(105, 104, 104)!important;
   color: white !important;
 }
 
@@ -27,7 +27,7 @@
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #182848;
+  background-color: #535252;
   color: white;
   position: relative;
   inset-block-end: 0;

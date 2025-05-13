@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
 })
 export class HomeComponent {
   trendingMovies = [
-    { title: 'Caos e Destruição', image: 'assets/filme1.png' },
+    { title: 'Tempo de Gerra', image: 'assets/filme1.png' },
     { title: 'Resgate implacável', image: 'assets/filme2.png' },
     { title: 'Ladrão de joias', image: 'assets/filme3.png' }
   ];

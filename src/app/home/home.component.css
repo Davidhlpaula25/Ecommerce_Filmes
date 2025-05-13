@@ -1,13 +1,15 @@
 .home-container {
   position: relative;
-
+  background-color: black;
   min-block-size: 100vh;
-  color: white;
+  color: rgb(44, 26, 26);
   font-family: 'Segoe UI', sans-serif;
 }
-
+.header{
+  background-color: black;
+}
 .overlay {
-  background:  #4b6cb7;
+  background: black;
   padding: 10px 20px 50px;
   text-align: center;
 }
@@ -25,13 +27,16 @@ h1 {
   font-size: 2rem;
   font-weight: bold;
   margin-block-end: 1px;
+  color: aliceblue;
 }
 
 h2{
+  color: aliceblue;
   font-size: 1.8rem;
   margin-block-end: 20px;
 }
 p{
+  color: aliceblue;
   font-size: 1.2rem;
   margin-block-end: 20px;
 }
@@ -52,7 +57,7 @@ p{
 }
 
 .email-box button {
-  background-color: red;
+  background-color: rgb(79, 81, 248);
   color: white;
   padding: 20px 30px;
   border: none;
@@ -62,24 +67,24 @@ p{
 }
 
 .trending {
-  background-color:  #4b6cb7;
-  padding: 40px 50px;
+  background-color: black;
+  padding: 10rem ;
 }
 
 .trending h3 {
-  font-size: 1.8rem;
+  color: aliceblue;
+  font-size: 3rem;
   margin-block-end: 20px;
 }
 
 .cards {
   display: flex;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 10px;
+  gap: 5rem;
 }
 
 .card {
-  background-color: #222;
-  border-radius: 5px;
+  background-color: #f1efef;
+  border-radius: 2rem ;
   overflow: hidden;
   text-align: center;
 }
@@ -92,4 +97,5 @@ p{
 
 .card p {
   padding: 10px;
+  color: black;
 }

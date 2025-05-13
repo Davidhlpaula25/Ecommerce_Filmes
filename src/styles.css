@@ -2,7 +2,7 @@
 /* Fonte e reset */
 body {
   margin: 0;
-  background-color: #4b4848;
+  background-color: #0f0f0f;
   font-family: Roboto, sans-serif;
 }
 .logo {
@@ -11,6 +11,7 @@ body {
   margin-block-start: 30px;
   block-size: 110px;
   inline-size: 120px;
+  
 
 }
 
@@ -21,8 +22,8 @@ mat-toolbar, .custom-toolbar {
   inset-block-start: 0;
   inset-inline-start: 0;
   inline-size: 100%;
-  background-color: #11235e !important; /* cinza escuro */
-  color: rgb(10, 10, 10) !important;
+  background-color: rgb(105, 104, 104) !important; /* cinza escuro */
+  color: rgb(194, 34, 34) !important;
   z-index: 1000;
 }
 
@@ -44,7 +45,7 @@ mat-toolbar, .custom-toolbar {
   inline-size: 280px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(212, 25, 25, 0.1);
   display: flex;
   flex-direction: column;
 }
@@ -54,6 +55,8 @@ mat-card img,.poster {
   inline-size: 100%;
   block-size: auto;
   border-block-end: 1px solid #dddddd;
+  
+
 }
 
 /* Texto da descrição */
@@ -72,11 +75,11 @@ mat-card img,.poster {
   justify-content: center;
   align-items: center;
   block-size: 100vh;
-  background: linear-gradient(to right, #4b6cb7, #182848);
+  background: black;
 }
 .button {
   background-color: white;
-  color: rgb(252, 249, 249); /* Ajuste a cor do texto para contraste */
+  color: aliceblue; /* Ajuste a cor do texto para contraste */
   border: 1px solid rgb(247, 238, 238); /* Opcional: borda para destacar o botão */
   padding: 8px 16px;
   border-radius: 4px;
