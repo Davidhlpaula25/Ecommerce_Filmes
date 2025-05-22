@@ -24,7 +24,7 @@
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-block-end: 1px;
   color: aliceblue;
@@ -37,7 +37,7 @@ h2{
 }
 p{
   color: aliceblue;
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   margin-block-end: 20px;
 }
 
@@ -91,7 +91,7 @@ p{
 
 .card img {
   inline-size: 100%;
-  block-size: 40rem;
+  block-size: 70rem;
   object-fit: cover;
 }
 
