@@ -14,6 +14,7 @@ export class HomeComponent {
   trendingMovies = [
     { title: 'Tempo de Guerra', image: 'assets/filme1.png' },
     { title: 'Resgate Implacável', image: 'assets/filme2.png' },
-    { title: 'Ladrão de Joias', image: 'assets/filme3.png' }
+    { title: 'Ladrão de Joias', image: 'assets/filme3.png' },
+    { title: 'Llo $ Stitch', image: 'assets/filme4.jpg' }
   ];
 }
