@@ -44,22 +44,13 @@ p{
 .email-box {
   display: flex;
   justify-content: center;
-  max-inline-size: 500px;
   margin: auto;
-  gap: 10px;
 }
 
-.email-box input {
-  flex: 1;
-  padding: 12px;
-  border: none;
-  border-radius: 4px;
-}
 
 .email-box button {
   background-color: rgb(79, 81, 248);
   color: white;
-  padding: 20px 30px;
   border: none;
   border-radius: 7px;
   font-weight: bold;
@@ -91,7 +82,7 @@ p{
 
 .card img {
   inline-size: 100%;
-  block-size: 70rem;
+  block-size: 45rem;
   object-fit: cover;
 }
 
